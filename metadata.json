@@ -1,0 +1,5 @@
+{
+  "name": "Aurora Music Vietnam Landing Page",
+  "description": "A sleek, modern landing page for Aurora Music Vietnam, built with React and Tailwind CSS. It features full-screen scroll-snap sections for home, music releases, copyright info, a contact form with Google Apps Script integration, social links, and a submission portal.",
+  "requestFramePermissions": []
+}
