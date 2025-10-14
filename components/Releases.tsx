@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import type { Release } from '../types';
 
@@ -11,6 +10,14 @@ const MOCK_RELEASES: Release[] = [
   { art: "https://picsum.photos/id/1040/500/500", name: "City Pulse - After Dark", stream: "#", date: "10/05/2024" },
   { art: "https://picsum.photos/id/1043/500/500", name: "Digital Nomad - Wanderer", stream: "#", date: "28/04/2024" },
   { art: "https://picsum.photos/id/1048/500/500", name: "Future Forward - Synthesis", stream: "#", date: "12/04/2024" },
+  { art: "https://picsum.photos/id/1050/500/500", name: "River Rhythms - Currents", stream: "#", date: "01/04/2024" },
+  { art: "https://picsum.photos/id/1054/500/500", name: "Urban Jungle - Concrete", stream: "#", date: "18/03/2024" },
+  { art: "https://picsum.photos/id/1060/500/500", name: "Coastal Call - Tides", stream: "#", date: "04/03/2024" },
+  { art: "https://picsum.photos/id/1062/500/500", name: "Mountain Echo - Summit", stream: "#", date: "20/02/2024" },
+  { art: "https://picsum.photos/id/1066/500/500", name: "Synthwave Sunset - Horizon", stream: "#", date: "10/02/2024" },
+  { art: "https://picsum.photos/id/1067/500/500", name: "Lo-Fi Dreams - Midnight", stream: "#", date: "28/01/2024" },
+  { art: "https://picsum.photos/id/1068/500/500", name: "Techno Temple - Ritual", stream: "#", date: "15/01/2024" },
+  { art: "https://picsum.photos/id/1069/500/500", name: "Ambient Aura - Calm", stream: "#", date: "01/01/2024" },
 ];
 
 const ReleaseCard: React.FC<{ release: Release }> = ({ release }) => (
@@ -57,15 +64,17 @@ const Releases: React.FC = () => {
 
   return (
     <section id="releases" className="h-screen w-screen snap-start flex flex-col justify-center items-center p-6 pb-24 md:p-8 md:pl-24">
-      <div className="w-full max-w-7xl">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">Our Releases</h2>
+      <div className="w-full max-w-7xl flex flex-col h-full overflow-hidden">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center flex-shrink-0">Our Releases</h2>
         {loading ? (
-          <div className="text-center text-xl">Loading new music...</div>
+          <div className="text-center text-xl flex-grow flex items-center justify-center">Loading new music...</div>
         ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
-            {releases.map((release, index) => (
-              <ReleaseCard key={index} release={release} />
-            ))}
+          <div className="overflow-y-auto flex-grow pr-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+              {releases.map((release, index) => (
+                <ReleaseCard key={index} release={release} />
+              ))}
+            </div>
           </div>
         )}
       </div>

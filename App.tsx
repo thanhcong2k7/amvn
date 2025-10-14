@@ -9,7 +9,7 @@ import Submission from './components/Submission';
 
 const App: React.FC = () => {
   // Replace this URL with your custom background image
-  const backgroundImageUrl = '/aurora.jpg';
+  const backgroundImageUrl = 'http://fuchsia.viiic.net/amvn/assets/aurora.jpg';
 
   return (
     <div
