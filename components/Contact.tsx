@@ -78,7 +78,7 @@ function doPost(e) {
 
 
   return (
-    <section id="contact" className="h-screen w-screen snap-start flex justify-center items-center p-6 pb-24 md:p-8 md:pl-24">
+    <section id="contact" className="min-h-screen w-screen snap-start flex justify-center items-center p-6 pb-24 md:p-8 md:pl-24">
       <div className="w-full max-w-6xl grid gap-10">
         <div className="flex flex-col justify-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>

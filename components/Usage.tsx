@@ -10,7 +10,7 @@ const InfoCard: React.FC<{ title: string; children: React.ReactNode }> = ({ titl
 
 const Usage: React.FC = () => {
   return (
-    <section id="usage" className="h-screen w-screen snap-start flex flex-col justify-center items-center p-6 pb-24 md:p-8 md:pl-24">
+    <section id="usage" className="min-h-screen w-screen snap-start flex flex-col justify-center items-center p-6 pb-24 md:p-8 md:pl-24">
       <div className="w-full max-w-5xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">Copyright & Usage</h2>
         <div className="grid md:grid-cols-2 gap-6">

@@ -63,7 +63,7 @@ const Releases: React.FC = () => {
   }, []);
 
   return (
-    <section id="releases" className="h-screen w-screen snap-start flex flex-col justify-center items-center p-6 pb-24 md:p-8 md:pl-24">
+    <section id="releases" className="min-h-screen w-screen snap-start flex flex-col justify-center items-center p-6 pb-24 md:p-8 md:pl-24">
       <div className="w-full max-w-7xl flex flex-col h-full overflow-hidden">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center flex-shrink-0">Our Releases</h2>
         {loading ? (
