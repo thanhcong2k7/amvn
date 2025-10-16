@@ -49,12 +49,12 @@ const Releases: React.FC = () => {
     const fetchReleases = () => {
       setTimeout(() => {
         // In a real app, you would fetch from your endpoint:
-        // fetch('https://your-api-endpoint.com/releases')
-        //   .then(res => res.json())
-        //   .then(data => setReleases(data))
-        //   .catch(err => console.error("Failed to fetch releases:", err))
-        //   .finally(() => setLoading(false));
-        setReleases(MOCK_RELEASES);
+        fetch('https://fuchsia.viiic.net/amvn/releases')
+        .then(res => res.json())
+        .then(data => setReleases(data))
+        .catch(err => console.error("Failed to fetch releases:", err))
+        .finally(() => setLoading(false));
+        //setReleases(MOCK_RELEASES);
         setLoading(false);
       }, 1000);
     };

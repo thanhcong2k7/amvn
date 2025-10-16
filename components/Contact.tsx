@@ -41,41 +41,6 @@ const Contact: React.FC = () => {
     });
   };
 
-  const gasScript = `
-function doPost(e) {
-  try {
-    var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("ContactFormSubmissions");
-    if (!sheet) {
-      sheet = SpreadsheetApp.getActiveSpreadsheet().insertSheet("ContactFormSubmissions");
-      sheet.appendRow(["Timestamp", "Name", "Email", "Message"]);
-    }
-    
-    var name = e.parameter.name;
-    var email = e.parameter.email;
-    var message = e.parameter.message;
-    var timestamp = new Date();
-    
-    sheet.appendRow([timestamp, name, email, message]);
-    
-    // Optional: Send an email notification
-    var emailRecipient = "your-email@example.com"; // Replace with your email
-    var subject = "New Contact Form Submission from " + name;
-    var emailBody = "You have a new message:\\n\\n" +
-                  "Name: " + name + "\\n" +
-                  "Email: " + email + "\\n" +
-                  "Message: " + message;
-    MailApp.sendEmail(emailRecipient, subject, emailBody);
-    
-    return ContentService.createTextOutput(JSON.stringify({ "result": "success" }))
-      .setMimeType(ContentService.MimeType.JSON);
-      
-  } catch (error) {
-    return ContentService.createTextOutput(JSON.stringify({ "result": "error", "error": error.toString() }))
-      .setMimeType(ContentService.MimeType.JSON);
-  }
-}
-  `.trim();
-
 
   return (
     <section id="contact" className="min-h-screen w-screen snap-start flex justify-center items-center p-6 pb-24 md:p-8 md:pl-24">
