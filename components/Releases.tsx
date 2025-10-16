@@ -49,9 +49,7 @@ const Releases: React.FC = () => {
     const fetchReleases = () => {
       setTimeout(() => {
         // In a real app, you would fetch from your endpoint:
-        fetch('https://fuchsia.viiic.net/amvn/releases',{
-          mode: 'no-cors'
-        })
+        fetch('https://fuchsia.viiic.net/amvn/releases')
         .then(res => res.json())
         .then(data => setReleases(data))
         .catch(err => console.error("Failed to fetch releases:", err))
