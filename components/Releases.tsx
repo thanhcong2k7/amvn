@@ -8,7 +8,7 @@ const MOCK_RELEASES: Release[] = [
 
 const ReleaseCard: React.FC<{ release: Release }> = ({ release }) => (
   <a href={release.stream} target="_blank" rel="noopener noreferrer" className="group relative aspect-square block w-full overflow-hidden rounded-lg shadow-xl">
-    <img src={"https://cors-anywhere-zv3o.onrender.com/"+release.art} referer="https://amvn.fuchsia.viiic.net" alt={release.name} className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+    <img src={release.art} alt={release.name} className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
     <div className="absolute inset-0 bg-black/50 group-hover:bg-black/70 transition-colors duration-300"></div>
     <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-6">
       <div className="translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
