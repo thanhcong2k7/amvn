@@ -35,11 +35,11 @@ const Releases: React.FC = () => {
     const fetchReleases = () => {
       setTimeout(() => {
         // In a real app, you would fetch from your endpoint:
-        fetch('https://api.cors.lol/?url=https://raw.githubusercontent.com/thanhcong2k7/amvn_releases/main/data.json',{
-          method: 'GET', // It's good practice to be explicit,
-          mode: "no-cors",
+        fetch('https://cors-anywhere-zv3o.onrender.com/https://raw.githubusercontent.com/thanhcong2k7/amvn_releases/main/data.json',{
+          method: 'GET', // It's good practice to be explicit,  
           headers: {
             'Content-Type': 'application/json',
+            'Origin': 'https://amvn.fuchsia.viiic.net',
             'Accept': 'application/json'
           }
         })
