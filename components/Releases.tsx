@@ -3,21 +3,7 @@ import type { Release } from '../types';
 
 const MOCK_RELEASES: Release[] = [
   { art: "https://picsum.photos/id/1011/500/500", name: "Cosmic Drift - Starlight", stream: "#", date: "15/07/2024" },
-  { art: "https://picsum.photos/id/1012/500/500", name: "Hanoi Nights - Neon Bloom", stream: "#", date: "01/07/2024" },
-  { art: "https://picsum.photos/id/1015/500/500", name: "Saigon Sonar - Echoes", stream: "#", date: "20/06/2024" },
-  { art: "https://picsum.photos/id/1025/500/500", name: "Mekong Flow - Delta Waves", stream: "#", date: "05/06/2024" },
-  { art: "https://picsum.photos/id/103/500/500", name: "Halong Haze - Limestone", stream: "#", date: "22/05/2024" },
-  { art: "https://picsum.photos/id/1040/500/500", name: "City Pulse - After Dark", stream: "#", date: "10/05/2024" },
-  { art: "https://picsum.photos/id/1043/500/500", name: "Digital Nomad - Wanderer", stream: "#", date: "28/04/2024" },
-  { art: "https://picsum.photos/id/1048/500/500", name: "Future Forward - Synthesis", stream: "#", date: "12/04/2024" },
-  { art: "https://picsum.photos/id/1050/500/500", name: "River Rhythms - Currents", stream: "#", date: "01/04/2024" },
-  { art: "https://picsum.photos/id/1054/500/500", name: "Urban Jungle - Concrete", stream: "#", date: "18/03/2024" },
-  { art: "https://picsum.photos/id/1060/500/500", name: "Coastal Call - Tides", stream: "#", date: "04/03/2024" },
-  { art: "https://picsum.photos/id/1062/500/500", name: "Mountain Echo - Summit", stream: "#", date: "20/02/2024" },
-  { art: "https://picsum.photos/id/1066/500/500", name: "Synthwave Sunset - Horizon", stream: "#", date: "10/02/2024" },
-  { art: "https://picsum.photos/id/1067/500/500", name: "Lo-Fi Dreams - Midnight", stream: "#", date: "28/01/2024" },
-  { art: "https://picsum.photos/id/1068/500/500", name: "Techno Temple - Ritual", stream: "#", date: "15/01/2024" },
-  { art: "https://picsum.photos/id/1069/500/500", name: "Ambient Aura - Calm", stream: "#", date: "01/01/2024" },
+  { art: "https://picsum.photos/id/1012/500/500", name: "Hanoi Nights - Neon Bloom", stream: "#", date: "01/07/2024" }
 ];
 
 const ReleaseCard: React.FC<{ release: Release }> = ({ release }) => (
@@ -49,7 +35,7 @@ const Releases: React.FC = () => {
     const fetchReleases = () => {
       setTimeout(() => {
         // In a real app, you would fetch from your endpoint:
-        fetch('https://fuchsia.viiic.net/amvn/releases',{
+        fetch('https://raw.githubusercontent.com/thanhcong2k7/amvn_releases/main/data.json',{
           method: 'GET', // It's good practice to be explicit
           headers: {
             'Content-Type': 'application/json',
