@@ -36,7 +36,8 @@ const Releases: React.FC = () => {
       setTimeout(() => {
         // In a real app, you would fetch from your endpoint:
         fetch('https://raw.githubusercontent.com/thanhcong2k7/amvn_releases/main/data.json',{
-          method: 'GET', // It's good practice to be explicit
+          method: 'GET', // It's good practice to be explicit,
+          mode: "no-cors",
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
