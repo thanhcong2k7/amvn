@@ -18,7 +18,7 @@ const Usage: React.FC = () => {
             Feel free to stream our music on any platform for your personal enjoyment. Sharing links to our official releases on social media is highly encouraged and appreciated!
           </InfoCard>
           <InfoCard title="Content Creators (YouTube, Twitch, etc.)">
-            You can use our music in your videos/streams. Please provide credit in your description by linking to the track on Spotify or our website. Some tracks may be registered with Content ID, which might result in a claim but will not cause a strike.
+            You can use our music in your videos/streams. Please provide credit in your description by linking to the track on Spotify or our website. Note that none of our tracks are registered with Content ID, so feel free to monetize your videos!
           </InfoCard>
           <InfoCard title="Commercial Licensing">
             For use in advertisements, films, games, or any other commercial project, you must obtain a license from us. Please use the contact form to get in touch with your project details, and we'll get back to you with a quote.
