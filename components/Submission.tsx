@@ -9,9 +9,9 @@ const Submission: React.FC = () => {
           Are you an artist with a unique sound? We'd love to hear what you're working on. Please use the form below to send us your demos.
         </p>
         <link rel="stylesheet" href="https://fuchsia.viiic.net/amvn/assets/button.css" />
-        <a href="https://form.typeform.com/to/ODwC5pFQ">
+        <a href="https://amvn.fuchsia.viiic.net">
           <button class="button">
-            Go to Typeform
+            Go to our submission portal!
             <div class="hoverEffect">
               <div></div>
             </div>
