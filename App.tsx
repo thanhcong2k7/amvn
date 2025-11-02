@@ -8,18 +8,13 @@ import Social from './components/Social';
 import Submission from './components/Submission';
 
 const App: React.FC = () => {
-  // Replace this URL with your custom background image
-  const backgroundImageUrl = require('./assets/aurora.jpg');
 
   return (
     <div
       className="relative h-screen w-full bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: `url(${backgroundImageUrl})` }}
+      style={{ backgroundImage: `url(https://iili.io/KL5Fsgs.md.jpg)` }}
     >
-      {/* This div creates a dark overlay for better text readability */}
       <div className="absolute inset-0 backdrop-blur-md bg-black/60"></div>
-      
-      {/* All content is placed above the overlay */}
       <div className="relative z-10">
         <Navbar />
         <main className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
