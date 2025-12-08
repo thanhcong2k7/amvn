@@ -9,7 +9,7 @@ const Submission: React.FC = () => {
           Are you an artist with a unique sound? We'd love to hear what you're working on. Please use the form below to send us your demos.
         </p>
         <link rel="stylesheet" href="https://fuchsia.viiic.net/amvn/assets/button.css" />
-        <a href="https://amvn-submission-form.vercel.app/">
+        <a href="https://aurora.viiic.net/demo">
           <button class="button">
             Go to our submission portal!
             <div class="hoverEffect">
