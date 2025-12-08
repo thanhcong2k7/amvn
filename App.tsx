@@ -12,7 +12,7 @@ const App: React.FC = () => {
   return (
     <div
       className="relative h-screen w-full bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: `url(https://iili.io/KL5Fsgs.md.jpg)` }}
+      style={{ backgroundImage: `url(https://iili.io/fATCvnf.jpg)` }}
     >
       <div className="absolute inset-0 backdrop-blur-md bg-black/60"></div>
       <div className="relative z-10">
